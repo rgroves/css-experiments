@@ -1,0 +1,234 @@
+/* 
+This wheel is not responsive. 
+Wedge positioning falls apart if size is not 500x500.
+*/
+.wheel-container {
+  box-sizing: content-box;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.wheel {
+  box-sizing: content-box;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@supports (clip-path: circle(50% at 50% 50%)) {
+  .wheel {
+    /* This will give the outside of the wedges 
+     a more circular shape. */
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+/* The wheel text doesn't look great, this was 
+   more of a test to see if text could be displayed
+   on the wedges. */
+.wheel-text {
+  padding-left: 100px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* Default styling for all wedges. */
+.wedge {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1px;
+  height: 67px;
+  background-color: transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right-width: 200px;
+  border-right-style: solid;
+}
+
+.wedge01 {
+  top: 217px;
+  left: 300px;
+  transform: rotate(0deg);
+  border-right-color: red;
+}
+
+.wedge02 {
+  top: 256px;
+  left: 295px;
+  transform: rotate(15deg);
+  border-right-color: orange;
+}
+
+.wedge03 {
+  top: 293px;
+  left: 280px;
+  transform: rotate(30deg);
+  border-right-color: yellow;
+}
+
+.wedge04 {
+  top: 324px;
+  left: 256px;
+  transform: rotate(45deg);
+  border-right-color: green;
+}
+
+.wedge05 {
+  top: 348px;
+  left: 225px;
+  transform: rotate(60deg);
+  border-right-color: blue;
+}
+
+.wedge06 {
+  top: 363px;
+  left: 189px;
+  transform: rotate(75deg);
+  border-right-color: indigo;
+}
+
+.wedge07 {
+  top: 368px;
+  left: 150px;
+  transform: rotate(90deg);
+  border-right-color: violet;
+}
+
+.wedge08 {
+  top: 363px;
+  left: 111px;
+  transform: rotate(105deg);
+  border-right-color: red;
+}
+
+.wedge09 {
+  top: 348px;
+  left: 75px;
+  transform: rotate(120deg);
+  border-right-color: orange;
+}
+
+.wedge10 {
+  top: 324px;
+  left: 44px;
+  transform: rotate(135deg);
+  border-right-color: yellow;
+}
+
+.wedge11 {
+  top: 293px;
+  left: 20px;
+  transform: rotate(150deg);
+  border-right-color: green;
+}
+
+.wedge12 {
+  top: 256px;
+  left: 5px;
+  transform: rotate(165deg);
+  border-right-color: blue;
+}
+
+.wedge13 {
+  top: 217px;
+  left: 0;
+  transform: rotate(180deg);
+  border-right-color: indigo;
+}
+
+.wedge14 {
+  top: 178px;
+  left: 5px;
+  transform: rotate(195deg);
+  border-right-color: violet;
+}
+
+.wedge15 {
+  top: 141px;
+  left: 20px;
+  transform: rotate(210deg);
+  border-right-color: red;
+}
+
+.wedge16 {
+  top: 110px;
+  left: 44px;
+  transform: rotate(225deg);
+  border-right-color: orange;
+}
+
+.wedge17 {
+  top: 86px;
+  left: 75px;
+  transform: rotate(240deg);
+  border-right-color: yellow;
+}
+
+.wedge18 {
+  top: 71px;
+  left: 111px;
+  transform: rotate(255deg);
+  border-right-color: green;
+}
+
+.wedge19 {
+  top: 66px;
+  left: 150px;
+  transform: rotate(270deg);
+  border-right-color: blue;
+}
+
+.wedge20 {
+  top: 71px;
+  left: 189px;
+  transform: rotate(285deg);
+  border-right-color: indigo;
+}
+
+.wedge21 {
+  top: 86px;
+  left: 225px;
+  transform: rotate(300deg);
+  border-right-color: violet;
+}
+
+.wedge22 {
+  top: 110px;
+  left: 256px;
+  transform: rotate(315deg);
+  border-right-color: red;
+}
+
+.wedge23 {
+  top: 141px;
+  left: 280px;
+  transform: rotate(330deg);
+  border-right-color: orange;
+}
+
+.wedge24 {
+  top: 178px;
+  left: 295px;
+  transform: rotate(345deg);
+  border-right-color: yellow;
+}
+
+.wheel-center {
+  position: absolute;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  background: rgb(0, 0, 0);
+  display: none;
+}
+
+@supports (clip-path: circle(25%)) {
+  .wheel-center {
+    display: block;
+    clip-path: circle(25%);
+  }
+}
