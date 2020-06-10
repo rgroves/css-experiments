@@ -1,0 +1,152 @@
+.wheel-container {
+  box-sizing: content-box;
+}
+
+.wheel {
+  box-sizing: content-box;
+  position: relative;
+  width: 100%;
+  /* 1:1 Aspect Ratio */
+  padding-top: 100%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.wedge {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wedge01 {
+  background-color: red;
+  clip-path: polygon(50% 0%, 50% 50%, 64% -2%);
+}
+
+.wedge02 {
+  background-color: orange;
+  clip-path: polygon(64% -2%, 50% 50%, 79% 0%);
+}
+
+.wedge03 {
+  background-color: yellow;
+  clip-path: polygon(79% 0%, 50% 50%, 100% 0%);
+}
+
+.wedge04 {
+  background-color: green;
+  clip-path: polygon(100% 0%, 50% 50%, 100% 21%);
+}
+
+.wedge05 {
+  background-color: blue;
+  clip-path: polygon(100% 21%, 50% 50%, 100% 37%);
+}
+
+.wedge06 {
+  background-color: indigo;
+  clip-path: polygon(100% 37%, 50% 50%, 100% 50%);
+}
+
+.wedge07 {
+  background-color: red;
+  clip-path: polygon(100% 50%, 50% 50%, 102% 64%);
+}
+
+.wedge08 {
+  background-color: orange;
+  clip-path: polygon(102% 64%, 50% 50%, 100% 79%);
+}
+
+.wedge09 {
+  background-color: yellow;
+  clip-path: polygon(100% 79%, 50% 50%, 100% 100%);
+}
+
+.wedge10 {
+  background-color: green;
+  clip-path: polygon(100% 100%, 50% 50%, 79% 100%);
+}
+
+.wedge11 {
+  background-color: blue;
+  clip-path: polygon(79% 100%, 50% 50%, 63% 100%);
+}
+
+.wedge12 {
+  background-color: indigo;
+  clip-path: polygon(63% 100%, 50% 50%, 50% 100%);
+}
+
+.wedge13 {
+  background-color: red;
+  clip-path: polygon(50% 100%, 50% 50%, 36% 102%);
+}
+
+.wedge14 {
+  background-color: orange;
+  clip-path: polygon(36% 102%, 50% 50%, 21% 100%);
+}
+
+.wedge15 {
+  background-color: yellow;
+  clip-path: polygon(21% 100%, 50% 50%, 0% 100%);
+}
+
+.wedge16 {
+  background-color: green;
+  clip-path: polygon(0% 100%, 50% 50%, 0% 79%);
+}
+
+.wedge17 {
+  background-color: blue;
+  clip-path: polygon(0% 79%, 50% 50%, -2% 64%);
+}
+
+.wedge18 {
+  background-color: indigo;
+  clip-path: polygon(-2% 64%, 50% 50%, 0% 50%);
+}
+
+.wedge19 {
+  background-color: red;
+  clip-path: polygon(0 50%, 50% 50%, -2% 36%);
+}
+
+.wedge20 {
+  background-color: orange;
+  clip-path: polygon(-2% 36%, 50% 50%, 0% 21%);
+}
+
+.wedge21 {
+  background-color: yellow;
+  clip-path: polygon(0% 21%, 50% 50%, 0% 0%);
+}
+
+.wedge22 {
+  background-color: green;
+  clip-path: polygon(0% 0%, 50% 50%, 21% 0%);
+}
+
+.wedge23 {
+  background-color: blue;
+  clip-path: polygon(21% 0%, 50% 50%, 37% 0%);
+}
+
+.wedge24 {
+  background-color: indigo;
+  clip-path: polygon(37% 0%, 50% 50%, 50% 0%);
+}
+
+.wheel-center {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  clip-path: circle(20% at 50% 50%);
+}
